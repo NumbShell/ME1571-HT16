@@ -1,1 +1,1 @@
-Here lies all exercises provided by the repo at https://github.com/dite-bth/ME1571-HT16
+Here lies all exercises I have done which was provided by the repo at https://github.com/dite-bth/ME1571-HT16
