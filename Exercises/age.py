@@ -1,4 +1,5 @@
 from datetime import datetime
+from datetime import datetime, timedelta
 
 #Make a list to store the year, month and day values
 list_date = []
@@ -17,7 +18,8 @@ def time_alive(y, m, d):
     if born > now:
         print("Are you from the future?")
     else:
-        print ("You have been alive for " + str(diff.days) + " days or " + str(diff.days * 24) + " hours")
+        print ("You have been alive for " + str(diff.days) + " days or " + str(diff.days * 24) + " hours\n"
+                                                                                                 "In thousand years it will be " + str(now + timedelta(days=1000)))
 
 
 def assign_date(date):
