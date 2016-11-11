@@ -56,7 +56,7 @@ def dates():
 #huvudfunktionen
 def age():
     # 1. Ask user for date and convert it for easier manipulation and store it in a var
-    date = dates()
+    date = dates()  #19971010
 
     # 2. Add dates to _y, _m and _d from date
     assign_date(date)

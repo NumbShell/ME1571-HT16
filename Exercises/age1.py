@@ -20,15 +20,20 @@ if __name__ == "__main__":
         #Grab the date that was specified by the user
         date = datetime(y,m,d)
 
-        #Calc diff
+        #Calc diff between the dates
         diff = now - date
-        #Calc the time since then in days
-        print("It has gone " + str(diff.days) + " days since " + str(date))
+
+        #if date is more than now...
+        if date > now:
+            print("Are you from the future?")
+        else:
+            # Calc the time since then in days
+            print("It has gone " + str(diff.days) + " days since " + str(date.date()))
 
     #Grab the arguments that was provided in the cmd
     value = sys.argv
 
-    #if length of value is less or equal to 2 then only one parameter was given
+    #if length of value is less or equal to 2 then only one parameter was given [age1.py, 1993, 10, 10]
     if len(value) <= 2:
         date_from_day(int(value[1]))
     else:
