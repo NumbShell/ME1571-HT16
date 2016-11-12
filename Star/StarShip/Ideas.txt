@@ -1,0 +1,16 @@
+SCAN: Scans the map for other ships like a radar, and 
+only show the parts of the ship the radar bounced off
+so only their sides would be seen awesome :O
+
+
+On the website there will also be like a command prompt
+where they can type commands to change color of their boat
+and perhaps even use that to playthe game like
+
+//move 3LEFT 2UP
+
+//move 10UP 10LEFT
+ERROR: Exceeding number of turns 5
+
+//color RED
+MSG: Applied colour red to ship
