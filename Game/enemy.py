@@ -53,5 +53,13 @@ def ship_damage(part):
         engine = engine + 1
 
 def attack():
-    print("Enemy Fired!")
+    chance = random.randrange(0,10)
+
+    if(chance >= 5):
+        print("Enemy fired and got a direct hit!")
+        dmg = random.randrange(20,30)
+        player.dmg_hp(dmg)
+    else:
+        print("Enemy missed!")
+
     #player.attack()

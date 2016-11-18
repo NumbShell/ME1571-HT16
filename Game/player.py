@@ -1,6 +1,7 @@
 import random
 import enemy
 import os
+import time
 
 from colorama import Fore, Back, Style
 from colorama import init
@@ -17,12 +18,19 @@ def get_visibility():
 def get_hp():
     return hp
 
-def return_hp(new_hp):
+def dmg_hp(dmg):
     global hp
-    hp = new_hp
+    hp = hp - dmg
+    status()
 
 def status():
-    if hp <= 25:
+    if hp <= 0:
+        print("Your ship sank.")
+        time.sleep(3)
+        clear()
+        print("Run program to try again!")
+
+    elif hp <= 25:
         print(Fore.RED + Style.BRIGHT + 'HP:' + str(hp) + Fore.WHITE + '   VSB:' + str(visibility))
         print("_________________________________________")
     elif hp <= 50:
