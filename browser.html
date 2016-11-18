@@ -1,9 +1,0 @@
-<h1>Currents rooms in Browser</h1>
-
-{% if current_rooms %}
-    {% for room in current_rooms %}
-        <li><a href="#">Players {{ room.players }} / 4 : {{ room.room_name}} Created {{ room.pub_date }} </a></li>
-    {% endfor %}
-{% else %}
-    <p>No rooms available.</p>
-{% endif %}
