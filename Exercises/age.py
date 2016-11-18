@@ -18,8 +18,7 @@ def time_alive(y, m, d):
     if born > now:
         print("Are you from the future?")
     else:
-        print ("You have been alive for " + str(diff.days) + " days or " + str(diff.days * 24) + " hours\n"
-                                                                                                 "In thousand years it will be " + str(now + timedelta(days=1000)))
+        print ("You have been alive for " + str(diff.days) + " days or " + str(diff.days * 24) + " hours")
 
 
 def assign_date(date):
@@ -57,7 +56,7 @@ def dates():
 #huvudfunktionen
 def age():
     # 1. Ask user for date and convert it for easier manipulation and store it in a var
-    date = dates()
+    date = dates()  #19971010
 
     # 2. Add dates to _y, _m and _d from date
     assign_date(date)
