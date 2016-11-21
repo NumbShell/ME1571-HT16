@@ -3,13 +3,11 @@
 file_.write('This is content from a variable! Actually no its not yet')
 file_.close()"""
 
-<<<<<<< HEAD
+
 def sentences():
     stn = input("Enter sentences...\n")
 
 
-sentences()
-=======
 """def convert(stn):
     #stn = input("Enter sentences...\n")
 
@@ -21,13 +19,12 @@ def message():
     return txt
 
 
-def toPirate(stn):
+def toPirate(msg):
     pirateDic={'hello':'avast', "the":"th'", }
-    pirateSentence=''
-    wordList=stn.split()
+    pirateSentence=msg
+    wordList=pirateSentence.split()
     for i in wordList:
         if i in pirateDic:
             i=pirateDic[i]
-        pirateSentence=pirateSentence+' '+i
-    return pirateSentence
->>>>>>> 45912551a6eb560034a27920aa17ff1e530e0410
+        pirate_Sentence=pirateSentence+' '+i
+    print(pirate_Sentence)
