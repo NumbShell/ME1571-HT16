@@ -18,6 +18,7 @@ def get_visibility():
 def get_hp():
     return hp
 
+#change hp based on input and then prints it out
 def dmg_hp(dmg):
     global hp
     hp = hp - dmg
