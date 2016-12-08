@@ -5,3 +5,5 @@ over my head and with shortage of time I'm abandoning this project, for now anyw
 
 
 Note that the game is in a fixed resolution of 1920 by 1200. 
+
+VIDEO OF GAME: https://www.youtube.com/watch?v=tre_wtxyRso
